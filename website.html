@@ -1,17 +1,42 @@
-<style>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-button{
-    background-color: red;    
-    color:white;
-    border: none;
-}
+    <style>  
 
-</style>
+        button{
+            background-color: red;    
+            color:white;
+            border: none;
+        }
 
-<button>
-    hello
-</button>
+        .yellow-btn{
+            background-color: yellow;
+        }
 
-<p> 
-    paragraph of  <button>Hello</button> text 
-</p>
+
+    </style>
+
+</head>
+<body>
+        
+        <button
+        onclick="
+        alert('Good Job');
+        "
+        >
+            hello
+        </button>
+        
+        <p> 
+            paragraph of  <button class="yellow-btn">Hello</button> text 
+        </p>
+
+        <script>
+            alert('Hello')
+        </script>
+</body>
+</html>
