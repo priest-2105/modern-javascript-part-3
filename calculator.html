@@ -7,20 +7,83 @@
 </head>
 <body>
     
+    <p>
     <button
     onclick="
-    calculation ++
+    calculation += '1'
     "
     >1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>+</button>
-    <button>=</button>
+
+    <button
+    onclick="
+    calculation += '2'
+    ">2</button>
+    
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >3</button>
+    </p>
+
+    <p>
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >4</button>
+
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >5</button>
+
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >6</button>
+</p>
+
+    <p>
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >7</button>
+
+
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >8</button>
+
+    <button
+    onclick="
+    calculation += '3'
+    "
+    >9</button>
+</p>
+
+    <button
+    onclick="
+    calculation += ' + '
+    "
+    >+</button>
+    
+    <button
+    onclick="eval(calculation)
+    console.log(calculation);
+    
+    "
+    >=</button>
 
 
     <script>
 
-      let calculation = 0;
+      let calculation = '';
 
 
 
