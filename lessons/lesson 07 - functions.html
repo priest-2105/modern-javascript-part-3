@@ -37,6 +37,22 @@
        console.log(convertToCelsius(86));
 
 
+
+       function convertToTemperature(degrees, unit){
+        
+            if ( unit === 'F'){
+                const result = (degrees - 32) * 5/9;
+                return `${result} C`;
+            }else if( unit === 'C'){
+                const result = (degrees * 9/5) + 32;
+                return `${result} F`;
+            }
+        }
+
+       console.log(convertToTemperature(25, 'C'));
+       console.log(convertToTemperature(86, 'F'));
+
+
     </script>
     
 </body>
