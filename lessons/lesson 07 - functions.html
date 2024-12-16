@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions - Lesson 5</title>
+</head>
+<body>
+
+
+    <script>
+
+        function greet(name){
+            if (!name){return `Hi there`}
+            else{return `Hello ${name}`};
+        }
+
+        console.log(greet('fawaz'));
+        console.log(greet('simon'));
+        console.log(greet());
+  
+
+
+        function convertToFahrenheit(celsius){
+            const result = (celsius * 9/5) + 32;
+            return result;
+        }
+
+       console.log(convertToFahrenheit(25));
+
+
+       function convertToCelsius(fahrenheit){
+            const result = (fahrenheit - 32) * 5/9;
+            return result;
+        }
+
+       console.log(convertToCelsius(86));
+
+
+    </script>
+    
+</body>
+</html>
