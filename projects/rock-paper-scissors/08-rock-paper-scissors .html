@@ -23,23 +23,35 @@
     score.losses = 0;
     score.ties = 0;
     alert('Score Reset');
+    localStorage.removeItem('score')
     ">Reset</button>
 
 
 
     <script>
     
-        const score = {
-            wins: 0,
-            losses: 0,
-            ties: 0
-        }
+    
+    let score = JSON.parse(localStorage.getItem('score')) ||
+    { 
+            wins: 0, 
+            losses: 0, 
+            ties: 0 
+    };
 
-        console.log(localStorage.getItem('score'));
 
+    // if (!score){
+    //     score = { 
+    //         wins: 0, 
+    //         losses: 0, 
+    //         ties: 0 };
+    //   }
+    
 
+    console.log(JSON.parse(localStorage.getItem('score')));
+
+    
         function playGame(playerMove){
-
+          
 
         const computerMove = pickComputerMove();
          
@@ -82,7 +94,7 @@
         if ( result === 'you win'){
             score.wins += 1;
         }else  if ( result === 'you lose'){
-            score.wins += 1;
+            score.losses += 1;
         }else  if ( result === 'tie'){
             score.ties += 1;
         }
