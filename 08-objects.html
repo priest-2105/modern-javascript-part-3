@@ -7,11 +7,36 @@
 </head>
 <body>
 
-    
+
 
 
     <script>
 
-    </script>
+    
+        const product = {
+            name: 'socks',
+            price: 1000,
+
+        }
+
+        console.log(typeof product);
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name = 'Shoes';
+
+        console.log(product);
+
+        product.newProperty = true;
+        console.log(product);
+
+        
+        delete product.newProperty;
+        console.log(product);
+        
+        
+
+</script>
 </body>
 </html> 
