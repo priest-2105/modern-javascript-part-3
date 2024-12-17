@@ -28,12 +28,15 @@
 
 
     <script>
-        /*
+    
         const score = {
             wins: 0,
             losses: 0,
             ties: 0
         }
+
+        console.log(localStorage.getItem('score'));
+
 
         function playGame(playerMove){
 
@@ -84,17 +87,18 @@
             score.ties += 1;
         }
 
-
- 
+     
          alert(`you picked ${playerMove}. Computer picked ${computerMove}. ${result}.
-         wins: ${score.wins}, losses: ${score.losses}, tie: ${score.ties}`)
+         wins: ${score.wins}, losses: ${score.losses}, tie: ${score.
+         ties}`)
          
+         
+         localStorage.setItem('score', JSON.stringify(score));
  
- 
+
         }
 
-
-
+      
         function pickComputerMove(){
 
             randomNumber = Math.random()
@@ -114,21 +118,40 @@
         }
 
 
-        function updateScore(){
 
-        }
 
-`*/
+        // const product2 = {
+        //     name: 'shirt',
+        //     ['delivery-time']: '1 day',
+        //     rating: {
+        //         stars: 4.5,
+        //         count: 87
+        //     },
+        //     fun: function function1(){
+        //         console.log('function inside object');
+                
+        //     }
+        // };
 
-        const product2 = {
-            name: 'shirt',
-            ['delivery-time']: '1 day'
-        };
+        // console.log(product2);
+        // console.log(product2.name);
+        // console.log(product2['name']);
+        // console.log(product2['delivery-time']);
 
-        console.log(product2);
-        console.log(product2.name);
-        console.log(product2['name']);
-        console.log(product2['delivery-time']);
+        // console.log(product2.rating.count);
+        // product2.fun();
+
+
+        // console.log(typeof console.log);
+        // console.log(typeof Math.random());
+
+        // console.log(JSON.stringify(product2));
+
+        // const jsonString = JSON.stringify(product2);
+        // console.log(JSON.parse(jsonString));
+
+
+        
 
 </script>
 </body>
