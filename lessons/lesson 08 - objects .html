@@ -29,8 +29,9 @@
 
         product.basketball['delivery-time'] = '3 days';
         
-        const { product1 = product.basketball, product2 = product.basketball} = product;
-
+        const product1 = product.basketball;
+        const product2 = product.baseball;
+     
         console.log(product.basketball);
         console.log(product1, product2);
 
@@ -50,10 +51,8 @@
        
        function isSameProduct(product1, product2) {
         
-       if ( product1.name  === product2.name && product1.price === product2.price ){
+       if ( product1  === product2 ){
          return console.log('true',product1,product2);
-         
-         
        }else{
         return console.log('false',product1,product2);
 
