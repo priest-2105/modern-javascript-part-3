@@ -16,17 +16,53 @@
             basketball : {
                 name: 'basketball',
                 price: 2095,
+            },
+            baseball : {
+                name: 'baseball',
+                price: 205,
             }
         }
 
         console.log(product.basketball);
         
-       product.basketball.price = 500
+        product.basketball.price = 500;
 
-       console.log(product.basketball);
+        product.basketball['delivery-time'] = '3 days';
+        
+        const { product1 = product.basketball, product2 = product.basketball} = product;
+
+        console.log(product.basketball);
+        console.log(product1, product2);
+
+        
         
 
+       function comparePrice(product1, product2) {
+        
+        if (product1.price < product2.price){
+            return product1;
+        } else {
+            return product2
+        }
 
+       }
+
+       
+       function isSameProduct(product1, product2) {
+        
+       if ( product1.name  === product2.name && product1.price === product2.price ){
+         return console.log('true',product1,product2);
+         
+         
+       }else{
+        return console.log('false',product1,product2);
+
+       }
+       }
+
+      console.log(comparePrice(product1, product2));
+
+      console.log(isSameProduct(product1, product2));
     </script>
     
 </body>
