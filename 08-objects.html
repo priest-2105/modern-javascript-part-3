@@ -1,8 +1,8 @@
-/
+
 <!DOCTYPE html>
 <html lang="en">
-7\///<head>
-444<meta charset="UTF-8">
+<head>
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects</title>
 </head>
@@ -14,27 +14,82 @@
     <script>
 
     
-        const product = {
-            name: 'socks',
-            price: 1000,
+        // const product = {
+        //     name: 'socks',
+        //     price: 1000,
 
-        }
+        // }
 
-        console.log(typeof product);
-        console.log(product);
-        console.log(product.name);
-        console.log(product.price);
+        // console.log(typeof product);
+        // console.log(product);
+        // console.log(product.name);
+        // console.log(product.price);
 
-        product.name = 'Shoes';
+        // product.name = 'Shoes';
 
-        console.log(product);
+        // console.log(product);
 
-        product.newProperty = true;
-        console.log(product);
+        // product.newProperty = true;
+        // console.log(product);
 
         
-        delete product.newProperty;
-        console.log(product);
+        // delete product.newProperty;
+        // console.log(product);
+        
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+
+        const object1 = {
+            message: 'hello'
+        }
+        
+        const object2 = object1;
+        
+        object1.message = 'Good job !';
+
+        console.log(object1);
+        console.log(object2);
+        
+
+        const object3= {
+            message: 'Good job !'
+        }
+
+        console.log(object3 === object1);
+        console.log(object3.message === object1.message);
+        console.log(object2 === object1);
+
+        const object4 = {
+            message: 'Good job !',
+            price: 799
+        }
+
+        // const message = object4.message;
+
+        const { message, price } = object4;
+        console.log(message);
+        console.log(price);
+
+
+        const object5 = {
+            message,
+            price,
+            // method: function function1(){
+            //     console.log('method');                
+            // },
+            method(){
+                console.log('method');
+                
+            }
+        }
+        console.log(object5);
+        object5.method();
+        
+
+        
+
         
         
 
