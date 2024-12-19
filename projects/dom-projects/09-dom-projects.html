@@ -4,48 +4,28 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+    <title>DOM Projects</title>
 </head>
 
 
 <body>
 
+    <p>Yotube Subscribe Button</p>
 
-    
-    <button>hello</button>
-    <button class="js-button">Second button</button>
+    <button class="js-button-element" onclick="
+    const subscribeButton = document.querySelector('.js-button-element');
+
+    if ( subscribeButton.innerHTML === 'Subscribe' ){
+        subscribeButton.innerHTML = 'Subscribed';
+    }else{
+        subscribeButton.innerHTML = 'Subscribe'
+    }
+    ">Subscribe</button>
 
 
     <script>
 
-        console.log(document.querySelector('button')
-            .innerHTML);
-        
-        document.querySelector('button')
-            .innerHTML= 'Changed'
-        
-        const buttonElement = document.querySelector('.js-button');
-
-        console.log(buttonElement);
-        
-        
-        
-        // console.log(document.title);
-        // document.title = 'Changed';
-
-        // console.log(document.body);
-        // console.log(typeof document.body);
-        
-        // console.log('innnerhtml', document.body.innerHTML);
-
-        // document.body.innerHTML = '<button> Good job!</button';
-
-            
-        // document.querySelector();
-        
-
-        // document.body.innerHTML = 'hello';
-        // document.title = 'Good Job';
+    
 
     </script>
 
