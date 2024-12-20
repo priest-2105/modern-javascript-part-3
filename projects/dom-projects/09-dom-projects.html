@@ -12,21 +12,23 @@
 
     <p>Yotube Subscribe Button</p>
 
-    <button class="js-button-element" onclick="
-    const subscribeButton = document.querySelector('.js-button-element');
-
-    if ( subscribeButton.innerHTML === 'Subscribe' ){
-        subscribeButton.innerHTML = 'Subscribed';
-    }else{
-        subscribeButton.innerHTML = 'Subscribe'
-    }
-    ">Subscribe</button>
+    <button class="js-button-element" onclick="subscribe();">Subscribe </button>
 
 
     <script>
 
-    
 
+    function subscribe () {
+
+        const subscribeButton = document.querySelector('.js-button-element');
+
+        if ( subscribeButton.innerText === 'Subscribe' ){
+            subscribeButton.innerText = 'Subscribed';
+        }else{
+            subscribeButton.innerText = 'Subscribe'
+       }
+           }
+    
     </script>
 
 
