@@ -19,13 +19,15 @@
     <button onclick="playGame('scissors');">Scissors</button>
 
     <p class="js-score">  </p>
+    <p class="js-move"></p>
     
     <button onclick="
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
-    alert('Score Reset');
-    localStorage.removeItem('score')
+    // alert('Score Reset');
+    localStorage.removeItem('score');
+    updateScoreEl();
     ">Reset</button>
 
 
@@ -41,8 +43,8 @@
     };
 
 
-
-    document.querySelector('.js-score')
+    updateScoreEl();
+    
 
     // if (!score){
     //     score = { 
@@ -105,16 +107,30 @@
         }
 
      
-         alert(`you picked ${playerMove}. Computer picked ${computerMove}. ${result}.
-         wins: ${score.wins}, losses: ${score.losses}, tie: ${score.
-         ties}`)
+        //  alert(`you picked ${playerMove}. Computer picked ${computerMove}. ${result}.
+        //  wins: ${score.wins}, losses: ${score.losses}, tie: ${score.
+        //  ties}`)
          
          
          localStorage.setItem('score', JSON.stringify(score));
- 
+
+         updateScoreEl();
+         showMove()
+        }
+
+
+        function updateScoreEl(){
+            document.querySelector('.js-score').innerHTML = 
+            `wins: ${score.wins}, 
+            losses: ${score.losses}, 
+            tie: ${score.ties}`;
 
         }
 
+        function showMove(){
+            document.querySelector('.js-move').innerHTML =
+                `You ${playerMove} - Computer ${computerMove}.`
+        }
       
         function pickComputerMove(){
 
