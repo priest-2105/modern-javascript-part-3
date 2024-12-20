@@ -43,9 +43,9 @@
             ties: 0 
     };
 
-    showMove()
-
-    updateScoreEl();
+        // showResult();
+        // showMove();
+        updateScoreEl();
 
     
 
@@ -114,15 +114,30 @@
         //  wins: ${score.wins}, losses: ${score.losses}, tie: ${score.
         //  ties}`)
          
-        document.querySelector('.js-result').innerHTML = 
-            `wins: ${score.wins}, 
-            losses: ${score.losses}, 
-            tie: ${score.ties}`;
+        // document.querySelector('.js-result').innerHTML = 
+        //     `Result ${result}`;
          
+        // document.querySelector('.js-move').innerHTML =
+        //         `You ${playerMove} - Computer ${computerMove}.`
+
          localStorage.setItem('score', JSON.stringify(score));
 
          updateScoreEl();
-         showMove()
+         showResult();
+         showMove();
+
+         function showMove(){
+            document.querySelector('.js-move').innerHTML =
+                `You ${playerMove} - Computer ${computerMove}.`
+        }
+
+        function showResult(){
+            document.querySelector('.js-result').innerHTML = 
+            `Result ${result}`;
+        }
+
+        showMove();
+        showResult();
         }
 
 
@@ -130,14 +145,10 @@
             document.querySelector('.js-score').innerHTML = 
             `wins: ${score.wins}, 
             losses: ${score.losses}, 
-            tie: ${score.ties}`;
-
+            tie: ${score.ties}`; 
         }
 
-        function showMove(){
-            document.querySelector('.js-move').innerHTML =
-                `You ${playerMove} - Computer ${computerMove}.`
-        }
+     
       
         function pickComputerMove(){
 
@@ -153,8 +164,7 @@
             computerMove = 'scissors';
             }
             
-            console.log(computerMove);
-
+            console.log(computerMove); 
             return computerMove;
         }        
 
