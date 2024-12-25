@@ -16,8 +16,8 @@
 
 
     <p>Amazon Shipping Calculator</p>
-    <input placeholder="Cost of order" type="text">
-    <button>Calculate</button>
+    <input placeholder="Cost of order" class="js-cost-input" type="text">
+    <button onclick="calculateTotal();" >Calculate</button>
 
 
     <script>
@@ -33,6 +33,15 @@
             subscribeButton.innerText = 'Subscribe'
        }
            }
+
+        function calculateTotal (){
+         const costInput_EL =  document.querySelector('.js-cost-input');
+         
+         console.log(costInput_EL.value);
+         
+        }
+
+
     
     </script>
 
