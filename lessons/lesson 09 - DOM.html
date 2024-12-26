@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lesson</title>
+</head>
+
+
+<body>
+
+    
+    <button>9a</button>
+    <button class="nine-b">9b</button>
+
+    
+    <button class="heads" onclick="handleHeads();">heads</button>
+    <button class="tails" onclick="handleTails();">tails</button>
+
+    <p></p>
+
+    <input class="submit-input" type="text" onkeydown="
+    if (event.key === 'Enter'){
+    submitName(event);
+    }
+    ">
+
+    <button class="submit-button" onclick="submitName();"> Submit</button>
+
+    <p class="submit-paragraph"></p>
+
+    <script>
+
+        console.log(document.querySelector('button'));
+        console.log(document.querySelector('.nine-b')
+                        .innerHTML = '9b done !');
+        
+        
+        function handleHeads () {
+          
+            const headButton_El = document.querySelector('.heads');
+
+            const paragraph_El = document.querySelector('p');
+
+            paragraph_El.innerHTML = 'You chose: Heads'
+
+        }
+
+        function handleTails () {
+          
+            const tailsButton_El = document.querySelector('.tails');
+
+          const paragraph_El = document.querySelector('p');
+
+          paragraph_El.innerHTML = 'You chose: Tails'
+
+      }
+
+      function submitName (event){
+
+        const submitInput_El = document.querySelector('.submit-input');
+        const submitButton_El = document.querySelector('.submit-input');
+        const submitParagraph_El = document.querySelector('.submit-paragraph');
+        
+        submitParagraph_El.innerHTML = `Your name is ${submitInput_El.value}`
+
+    }
+
+    
+    </script>
+
+
+</body>
+</html> 
