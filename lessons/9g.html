@@ -54,7 +54,7 @@
         function calculateTotal (){
          const costInput_EL =  document.querySelector('.js-cost-input'); 
          
-         let cost = Number(costInput_EL.value);
+         let cost = Math.round(Number(costInput_EL.value));
          console.log(cost);
          console.log(typeof cost);
          
