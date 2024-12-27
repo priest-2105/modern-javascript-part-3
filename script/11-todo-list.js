@@ -7,14 +7,17 @@ const todoParagraph_El = document.querySelector('.todo-paragraph');
 
 function addTodoList(){
 
-      todoArr.push(todoInput_El.value);
 
       for (let i = 0; i < todoArr.length; i++) {
-          const paragraph =  document.createElement('p');
+        todoArr.push(todoInput_El.value);
+    
+        const paragraph =  document.createElement('p');
           paragraph.innerHTML = todoArr[i];
           todoParagraph_El.appendChild(paragraph);
-      }
-       console.log(todoArr);
+        
+          console.log(todoArr[i]);
+     
+        } 
        
 }
 
