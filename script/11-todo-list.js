@@ -10,7 +10,9 @@ function addTodoList(){
       todoArr.push(todoInput_El.value);
 
       for (let i = 0; i < todoArr.length; i++) {
-       todoParagraph_El.innerHTML = todoArr;     
+          const paragraph =  document.createElement('p');
+          paragraph.innerHTML = todoArr[i];
+          todoParagraph_El.appendChild(paragraph);
       }
        console.log(todoArr);
        
