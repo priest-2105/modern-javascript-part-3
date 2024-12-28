@@ -147,18 +147,26 @@
       //   i++
       // }
 
-      const nums = [1, 1, 3];
+      function doubleArray (nums){
 
       const doubledNum = [];
 
       for (let i = 0; i < nums.length; i++) {
        
+
+        if( nums[i] === 0){
+          return doubledNum;
+        }
+
         doubledNum.push(nums[i] * 2);
         
       }
+     return doubledNum;
 
-      console.log(doubledNum);
+    };
 
+    console.log(doubleArray([1, 2, 3]));
+    console.log(doubleArray([2, 2, 5, 0, 4]));
 
 
     </script>
