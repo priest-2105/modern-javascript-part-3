@@ -10,7 +10,79 @@
 
     <script>
 
+        const nums = [ 10, 20, 30];
 
+        nums[2] = 99
+
+        function getLastValue(array){
+          return array[array.length - 1 ];
+        }
+
+        function arraySwap(array){
+        
+        
+          const firstValue = array[0];
+
+          const lastValue = array[array.length - 1];
+
+        
+          array[0] = firstValue;
+
+          array[array.length - 1] = lastValue;
+          
+          return array;
+        
+        }
+
+        const numArr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        for (let i = 0; i < 6; i ++) {
+          
+            const element = numArr[i] * 2 ;
+           
+            console.log(element);
+            
+        }
+
+        for (let i = 5; i >= 0; i--) {
+
+        const element = numArr[i];
+               
+          console.log('5 to 1 aray', element);
+      }
+
+
+      for (let i = 0; i < numArr.length; i ++) {
+          
+          const element = numArr[i] + 2 ;
+         
+          console.log('increment by 2', element);
+          
+      }
+
+
+      function addOne(array){
+        for (let i = 0; i < array.length; i++){
+          
+            const result = array[i] + 1;
+          
+          console.log(result);
+        }
+      }
+
+
+        console.log(nums);
+      
+        console.log('getLastValue', getLastValue([1, 20, 22, 24, 5]));
+        console.log('getLastValue', getLastValue(['hi', 'hello', 'good']));
+      
+        console.log('arraySwap', arraySwap([1, 20, 22, 24, 5]));
+        console.log('arraySwap', arraySwap(['hi', 'hello', 'good']));
+        
+        console.log('addOne', addOne([2, 3, 4]));
+        console.log('addOne', addOne([-2, -1, 0, 99]));
+
+        
 
     </script>
     
