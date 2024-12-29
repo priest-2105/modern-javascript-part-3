@@ -10,169 +10,233 @@
 
     <script>
 
-        const nums = [ 10, 20, 30];
+    //     const nums = [ 10, 20, 30];
 
-        nums[2] = 99
+    //     nums[2] = 99
 
-        function getLastValue(array){
-          return array[array.length - 1 ];
-        }
+    //     function getLastValue(array){
+    //       return array[array.length - 1 ];
+    //     }
 
-        function arraySwap(array){
+    //     function arraySwap(array){
         
         
-          const firstValue = array[0];
+    //       const firstValue = array[0];
 
-          const lastValue = array[array.length - 1];
+    //       const lastValue = array[array.length - 1];
 
         
-          array[0] = firstValue;
+    //       array[0] = firstValue;
 
-          array[array.length - 1] = lastValue;
+    //       array[array.length - 1] = lastValue;
           
-          return array;
+    //       return array;
         
-        }
+    //     }
 
-        const numArr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //     const numArr = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-        for (let i = 0; i < 6; i ++) {
+    //     for (let i = 0; i < 6; i ++) {
           
-            const element = numArr[i] * 2 ;
+    //         const element = numArr[i] * 2 ;
            
-            console.log(element);
+    //         console.log(element);
             
-        }
+    //     }
 
-        for (let i = 5; i >= 0; i--) {
+    //     for (let i = 5; i >= 0; i--) {
 
-        const element = numArr[i];
+    //     const element = numArr[i];
                
-          console.log('5 to 1 aray', element);
-      }
+    //       console.log('5 to 1 aray', element);
+    //   }
 
 
-      for (let i = 0; i < numArr.length; i ++) {
+    //   for (let i = 0; i < numArr.length; i ++) {
           
-          const element = numArr[i] + 2 ;
+    //       const element = numArr[i] + 2 ;
          
-          console.log('increment by 2', element);
+    //       console.log('increment by 2', element);
           
-      }
+    //   }
 
 
-      function addOne(array){
-        for (let i = 0; i < array.length; i++){
+    //   function addOne(array){
+    //     for (let i = 0; i < array.length; i++){
           
-         const result = array[i] + 1;
+    //      const result = array[i] + 1;
           
-          console.log(result);
-        }
-      }
+    //       console.log(result);
+    //     }
+    //   }
 
 
              
 
-      function addNum(arr, num){
+    //   function addNum(arr, num){
 
-        for(let i = 0; i < arr.length; i++){
+    //     for(let i = 0; i < arr.length; i++){
 
-        const result = arr[i] + num;
+    //     const result = arr[i] + num;
 
-        console.log(result);
+    //     console.log(result);
          
-       }
-    }
+    //    }
+    // }
 
 
-    function addArr(arr1, arr2){
+    // function addArr(arr1, arr2){
 
-        let newarr = [];
+    //     let newarr = [];
 
-        for(let i = 0; i < arr1.length; i++){
+    //     for(let i = 0; i < arr1.length; i++){
 
-        // for(let j = 0; j <= arr2.length; j++){
+    //     // for(let j = 0; j <= arr2.length; j++){
        
             
-            const result = arr1[i] + arr2[i]
+    //         const result = arr1[i] + arr2[i]
 
-            newarr.push(result);
+    //         newarr.push(result);
             
-            console.log(newarr);
+    //         console.log(newarr);
             
-        // }       
+    //     // }       
 
-            }
-    }
+    //         }
+    // }
 
 
 
     
-       function countPositive(nums){
+    //    function countPositive(nums){
 
-            let count = 0; 
+    //         let count = 0; 
 
-            for(let i = 0; i < nums.length; i++){
-               if(nums[i] > 0){
+    //         for(let i = 0; i < nums.length; i++){
+    //            if(nums[i] > 0){
     
-                 count++; 
+    //              count++; 
                  
-               }
-            }
-            return count;
+    //            }
+    //         }
+    //         return count;
              
-        }
+    //     }
      
 
-        function minMax(nums){
+    //     function minMax(nums){
 
-            let maxNum = nums[0];
-            let minNum = nums[0];
+    //         let maxNum = nums[0];
+    //         let minNum = nums[0];
 
-            for (let i = 0; i < nums.length; i++) {
+    //         for (let i = 0; i < nums.length; i++) {
                 
-                if(maxNum > nums[i] ){
-                    maxNum = nums[i];
+    //             if(maxNum > nums[i] ){
+    //                 maxNum = nums[i];
 
-                }else if (minNum < nums[i] )(
-                    minNum = nums[i]
-                )
+    //             }else if (minNum < nums[i] )(
+    //                 minNum = nums[i]
+    //             )
 
-               }
-               return { min: minNum, max: maxNum};
-        }
-
-
+    //            }
+    //            return { min: minNum, max: maxNum};
+    //     }
 
 
-        console.log(nums);
+
+
+    //     console.log(nums);
       
-        console.log('getLastValue', getLastValue([1, 20, 22, 24, 5]));
-        console.log('getLastValue', getLastValue(['hi', 'hello', 'good']));
+    //     console.log('getLastValue', getLastValue([1, 20, 22, 24, 5]));
+    //     console.log('getLastValue', getLastValue(['hi', 'hello', 'good']));
       
-        console.log('arraySwap', arraySwap([1, 20, 22, 24, 5]));
-        console.log('arraySwap', arraySwap(['hi', 'hello', 'good']));
+    //     console.log('arraySwap', arraySwap([1, 20, 22, 24, 5]));
+    //     console.log('arraySwap', arraySwap(['hi', 'hello', 'good']));
         
-        console.log('addOne', addOne([2, 3, 4]));
-        console.log('addOne', addOne([-2, -1, 0, 99]));
+    //     console.log('addOne', addOne([2, 3, 4]));
+    //     console.log('addOne', addOne([-2, -1, 0, 99]));
 
 
          
-        console.log('addNum', addNum([1, 2, 3], 2));
-        console.log('addNum', addNum([1, 2, 3], 3));
-        console.log('addNum', addNum([-2, -1, 0, 99], 2));
+    //     console.log('addNum', addNum([1, 2, 3], 2));
+    //     console.log('addNum', addNum([1, 2, 3], 3));
+    //     console.log('addNum', addNum([-2, -1, 0, 99], 2));
  
-        console.log('addArr', addArr([1, 1, 2], [1, 1, 3]));
-        console.log('addArr', addArr([1, 2, 3], [4, 5, 6]));
+    //     console.log('addArr', addArr([1, 1, 2], [1, 1, 3]));
+    //     console.log('addArr', addArr([1, 2, 3], [4, 5, 6]));
 
         
-        console.log('countPositive', countPositive([1, -3, 5]));
-        console.log('countPositive', countPositive([-2, 3, -5, 7, 10]));
+    //     console.log('countPositive', countPositive([1, -3, 5]));
+    //     console.log('countPositive', countPositive([-2, 3, -5, 7, 10]));
  
 
-        console.log('minMax', minMax([1, -3, 5]));
-        console.log('minMax', minMax([-2, 3, -5, 7, 10]));
+    //     console.log('minMax', minMax([1, -3, 5]));
+    //     console.log('minMax', minMax([-2, 3, -5, 7, 10]));
  
+
+
+    // const strArr = ['hello', 'world', 'search', 'search', 'good'];
+
+    // let found = false;
+
+    // for (let i = 0; i < strArr.length; i++){
+
+    //   if (strArr[i] === 'search'){
+    //     console.log(i);
+    //     found = true;
+    //     break;
+    //   }
+    // }
+
+    // if (!found){
+    //   console.log(-1);
+    // }
+
+
+
+
+    // const strArr2 = ['not', 'found'];
+
+    // let found = false;
+
+    // for (let i = 0; i < strArr.length; i++){
+
+    //   if (strArr[i] === 'search'){
+    //     console.log(i);
+    //     found = true;
+    //     break;
+    //   }
+    // }
+
+    // if (!found){
+    //   console.log(-1);
+    // }
+
+
+
+    function findIndex(array, word){
+
+      let found = false;
+
+      for (let i = 0; i < array.length; i++){
+
+        if ( array[i] === word){
+          found = true
+          console.log(array[i], i);
+          break;
+        }
+      }
+
+      if (!found){
+        console.log(-1);
+        
+      }
+
+    }
+
+    findIndex(['green', 'red', 'blue', 'red'], 'red');
+    findIndex(['green', 'red', 'blue', 'red'], 'yellow');
+
 
 
 
