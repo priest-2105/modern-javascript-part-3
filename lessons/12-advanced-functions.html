@@ -19,15 +19,43 @@
 
 
     <button id="addtoCardBtn" onclick="
-    setTimeout( 
-    function finished (){
-    document.querySelector('#addtoCardBtn').innerHTML = 'Add to Card';
+
+
+    // let isFinished = false;
+
+    // let timeoutId;
+
+    // if (!isFinished){
+    // timeoutId = setTimeout( 
+    // function finished (){
+    // let isFinished = true;
+    // document.querySelector('#addtoCardText').innerHTML = ' ';
+    // }   
+    // , 3000)
+    // document.querySelector('#addtoCardText').innerHTML = 'Added';
+    // }else{
+    //     isFinished = false;
+    //     clearTimeout(timeoutId);
+    // }
+
+
+    
+
+    clearTimeout(timeoutId);
+
+    document.querySelector('#addtoCardText').innerHTML = 'Added';
+
+    timeoutId = setTimeout( 
+    function finished (){ 
+    document.querySelector('#addtoCardText').innerHTML = ' ';
     }   
-    , 3000)
-    document.querySelector('#addtoCardBtn').innerHTML = 'Added';
+    , 3000) 
+
     ">Add to cart</button>
+    <p id="addtoCardText"></p>
 
     <script>
+    let timeoutId;
 
 
         const add = function(){[
