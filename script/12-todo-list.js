@@ -21,7 +21,7 @@ renderTodoList();
   
     let todoListHTML = '';
 
-    todoList.forEach(function(todo, index) {
+    todoList.forEach((todo, index) => {
  
       
       const { name , dueDate } = todo;

@@ -5,11 +5,21 @@
   </head>
   <body>
 
-
-
-
+    <button onclick="" class="js-button"> Click </button>
 
     <script>
+
+      const button_El = document.querySelector('.js-button');
+
+      button_El.addEventListener('click', () => {
+        console.log('click');
+      });
+
+      button_El.addEventListener('click', () => {
+        console.log('click 2');
+      });
+
+
         // greeting();
         // function greeting() {
         //     console.log('grreting');   
@@ -69,41 +79,51 @@
         // console.log('Next Line 2');
         
 
-        [
-          'make dinner',
-          'wash dishes',
-          'watch youtube'
-        ].forEach((value, index) => {
-          if (value === "wash dishes"){
-            return;
-          };
-          console.log(index)          
-          console.log(value)
-        });
+        // [
+        //   'make dinner',
+        //   'wash dishes',
+        //   'watch youtube'
+        // ].forEach((value, index) => {
+        //   if (value === "wash dishes"){
+        //     return;
+        //   };
+        //   console.log(index)          
+        //   console.log(value)
+        // });
 
         
-        const regularFunction = function(param, param2){
-        console.log('Hello');
-        return 5;
-        }
+        // const regularFunction = function(param, param2){
+        // console.log('Hello');
+        // return 5;
+        // }
         
 
-        const arrowFunction = (param, param2) => {
-        console.log('Hello'); 
-        return 5;
-        }
+        // const arrowFunction = (param, param2) => {
+        // console.log('Hello'); 
+        // return 5;
+        // }
 
-        const oneParam = param => {
-        console.log(param + 1);
-        };
+        // const oneParam = param => {
+        // console.log(param + 1);
+        // };
 
-        oneParam(2);
+        // oneParam(2);
 
-        const oneLine = () => 2 + 3;
+        // const oneLine = () => 2 + 3;
 
-        arrowFunction();
-        console.log(oneLine());
+        // arrowFunction();
+        // console.log(oneLine());
         
+
+
+        // const obj2 = {
+        //   method: () => {console.log();
+        //   },
+        //   method(){
+        //     console.log();
+        //   },
+        // }
+
 
 
 
