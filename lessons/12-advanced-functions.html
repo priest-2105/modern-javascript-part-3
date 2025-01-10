@@ -93,12 +93,12 @@
         }
         }
 
-        function updateTitle () {
-
-        setInterval(function(){ 
-            document.title = `${messages} New Messages`;
-            
-        }, 2000)
+            function updateTitle () {
+                if (messages > 0 ){
+                    document.title = `${messages} New Messages`;
+                }else{
+                    document.title = 'App';
+                }
     }
 
 
