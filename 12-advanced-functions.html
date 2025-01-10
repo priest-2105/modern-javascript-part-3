@@ -6,11 +6,38 @@
   <body>
 
 
-    
+
 
 
     <script>
+        greeting();
+        function greeting() {
+            console.log('grreting');   
+        }
         
+        greeting();
+
+        const num = 2;
+
+        const function1 = function() {
+            console.log('Hello 2')
+        };
+        
+
+        console.log(function1);
+        console.log(typeof function1);
+        
+        function1();
+
+        const object1 = {
+            num: 2,
+            fun: function greeting(){
+                console.log('Hello 3');
+            },
+        }
+
+        object1.fun();
+
     </script>
 
 </body>
