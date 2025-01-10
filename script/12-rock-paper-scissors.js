@@ -30,6 +30,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         isAutoPlay = true
     }else{
       clearInterval(intervalId);
+      isAutoPlay = false
     }
     }
 
