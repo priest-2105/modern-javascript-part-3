@@ -214,28 +214,48 @@
 
 
 
-    function findIndex(array, word){
+    // function findIndex(array, word){
 
-      let found = false;
+    //   let found = false;
 
-      for (let i = 0; i < array.length; i++){
+    //   for (let i = 0; i < array.length; i++){
 
-        if ( array[i] === word){
-          found = true
-          console.log(array[i], i);
-          break;
-        }
-      }
+    //     if ( array[i] === word){
+    //       found = true
+    //       console.log(array[i], i);
+    //       break;
+    //     }
+    //   }
 
-      if (!found){
-        console.log(-1);
+    //   if (!found){
+    //     console.log(-1);
         
-      }
+    //   }
 
+    // }
+
+    // findIndex(['green', 'red', 'blue', 'red'], 'red');
+    // findIndex(['green', 'red', 'blue', 'red'], 'yellow');
+
+
+    function removeEggs(food){
+
+
+    let removedarr = [];
+   
+    for (let i = 0; i < food.length; i++){
+
+        if ( food[i] === 'egg'){ 
+          continue;
+        }
+        removedarr.push(food[i]);
+       
+      }
+   
+      return removedarr;
     }
 
-    findIndex(['green', 'red', 'blue', 'red'], 'red');
-    findIndex(['green', 'red', 'blue', 'red'], 'yellow');
+   console.log(removeEggs(['egg', 'apple', 'egg', 'egg']));
 
 
 
