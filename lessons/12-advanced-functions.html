@@ -54,6 +54,12 @@
     ">Add to cart</button>
     <p id="addtoCardText"></p>
 
+    <button   onclick="addMessage(); console.log(messages);
+    ">Add</button>
+    <button  onclick="removeMessage(); console.log(messages);
+    ">Remove</button>
+
+
     <script>
     let timeoutId;
 
@@ -72,7 +78,34 @@
         runTwice(add);
 
 
+        let messages = 2;
+
        
+        function addMessage(){
+            messages++;
+        }
+
+        function removeMessage(){
+        if(messages <= '0'){ 
+            document.title = 'App'; 
+        }else{
+            messages--;
+        }
+        }
+
+        function updateTitle () {
+
+        setInterval(function(){ 
+            document.title = `${messages} New Messages`;
+            
+        }, 2000)
+    }
+
+
+    updateTitle();
+
+
+        
        
     </script>
     
